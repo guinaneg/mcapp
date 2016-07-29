@@ -10,6 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *Connect;
+@property (weak, nonatomic) IBOutlet UITextField *SubscriberId;
+@property (weak, nonatomic) IBOutlet UILabel *HelloLabel;
 
 @end
 
