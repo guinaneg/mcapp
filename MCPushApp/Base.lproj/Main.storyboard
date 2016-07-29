@@ -40,7 +40,6 @@
                                 <state key="normal" title="Send to Marketing Cloud"/>
                                 <connections>
                                     <action selector="handleButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IzX-hg-3mz"/>
-                                    <action selector="sendToMC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gHv-vb-SL8"/>
                                 </connections>
                             </button>
                         </subviews>
