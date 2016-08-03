@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		005F7267590A8BF25440B4D0 /* Pods_MCPushApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5DA41061928E20D247213D /* Pods_MCPushApp.framework */; };
+		21B4F1A81D50B1BE00EB34EC /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21B4F1A71D50B1BE00EB34EC /* Media.xcassets */; };
 		21BF6E4E1D4B632100F306E7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BF6E4D1D4B632100F306E7 /* main.m */; };
 		21BF6E511D4B632100F306E7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BF6E501D4B632100F306E7 /* AppDelegate.m */; };
 		21BF6E571D4B632100F306E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BF6E551D4B632100F306E7 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		007E6D155EBC734F43152D7B /* Pods-MCPushApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCPushApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MCPushApp/Pods-MCPushApp.release.xcconfig"; sourceTree = "<group>"; };
+		21B4F1A71D50B1BE00EB34EC /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		21BF6E491D4B632100F306E7 /* MCPushApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MCPushApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21BF6E4D1D4B632100F306E7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		21BF6E4F1D4B632100F306E7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		21BF6E401D4B632100F306E7 = {
 			isa = PBXGroup;
 			children = (
+				21B4F1A71D50B1BE00EB34EC /* Media.xcassets */,
 				21BF6E4B1D4B632100F306E7 /* MCPushApp */,
 				21BF6E651D4B632100F306E7 /* MCPushAppTests */,
 				21BF6E701D4B632100F306E7 /* MCPushAppUITests */,
@@ -234,6 +237,7 @@
 				TargetAttributes = {
 					21BF6E481D4B632100F306E7 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = VPF26MAPD7;
 					};
 					21BF6E611D4B632100F306E7 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -272,6 +276,7 @@
 			files = (
 				21BF6E5C1D4B632100F306E7 /* LaunchScreen.storyboard in Resources */,
 				21BF6E591D4B632100F306E7 /* Assets.xcassets in Resources */,
+				21B4F1A81D50B1BE00EB34EC /* Media.xcassets in Resources */,
 				21BF6E571D4B632100F306E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,10 +493,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MCPushApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.guinane.MCPushApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -501,10 +510,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MCPushApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.guinane.MCPushApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -45,7 +45,7 @@ static NSString *kETAccessToken_Prod  = @"mh7unqtsg6vkb9wydtcdd94b";
         successful = [[ETPush pushManager] configureSDKWithAppID:kETAppID_Prod
                                               andAccessToken:kETAccessToken_Prod
                                                withAnalytics:YES
-                                         andLocationServices:YES       // ONLY SET TO YES IF PURCHASED AND USING GEOFENCE CAPABILITIES
+                                         andLocationServices:YES       // ONLY SET TO YES IF  AND USING GEOFENCE CAPABILITIES
                                         andProximityServices:YES       // ONLY SET TO YES IF YOU ARE PART OF THE BEACON BETA PROGRAM
                                                andCloudPages:YES       // ONLY SET TO YES IF PURCHASED AND USING CLOUDPAGES
                                              withPIAnalytics:YES
@@ -54,7 +54,6 @@ static NSString *kETAccessToken_Prod  = @"mh7unqtsg6vkb9wydtcdd94b";
     #endif
     
     [ETPush setETLoggerToRequiredState:YES];
- 
     if (!successful) {
         dispatch_async(dispatch_get_main_queue(), ^{
             // something failed in the configureSDKWithAppID call - show what the error is
@@ -84,6 +83,8 @@ static NSString *kETAccessToken_Prod  = @"mh7unqtsg6vkb9wydtcdd94b";
         // Only call this method if you have LocationServices set to YES in configureSDK()
         [[ETLocationManager sharedInstance] startWatchingLocation];
     }
+
+
     return YES;
 }
 
